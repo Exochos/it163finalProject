@@ -65,6 +65,7 @@ function buildTable(data){
         table.innerHTML += row;
     }
 }
+
 buildTable(products);
 
 
