@@ -17,27 +17,6 @@ var products = [
     {name:'This is the End', studio:"don't remember", releaseDate:'9/20/2015' },
 
 ]; 
-buildTable(products);
-function buildTable(data){ 
-    var table=document.getElementById('myTable'); 
-    
-    for(var i = 0; i < data.length; i ++){ 
-        var row= `<tr>
-                        <td>${data[i].name}</td>
-                        <td>${data[i].studio}</td>
-                        <td>${data[i].releaseDate}</td>
-                  </tr>
-        `;
-        table.innerHTML += row;
-    }
-}
-
-
-//navDropDown() onclick function that drops the nav 
-function navDropDown(){ 
-    document.getElementById("myDropDown").classList.toggle("show"); 
-}
-
 //set DOM elements to variables
 var minutes=document.getElementById("mins");
 var seconds=document.getElementById("seconds"); 
@@ -63,9 +42,9 @@ function pad(val) {
 
 //for random number alert between 1-10
 var randomNumber = Math.floor(Math.random() * 11); 
-//console.log(randomNumber); 
-//displays winner box if randomNumber == 10 
-if(randomNumber == 10){ 
+console.log(randomNumber); 
+//displays winner box if randomNumber === 10 
+if(randomNumber === 10){ 
     var modal = document.getElementById("pop_up");
     var span = document.getElementsByClassName("close")[0]; 
     modal.style.display="block"; 
@@ -73,3 +52,25 @@ if(randomNumber == 10){
 
 
 
+//start of store items 
+var row=document.getElementById('row'); 
+
+buildrows(products); 
+function buildrows(data){ 
+    var row=document.getElementById('row'); 
+    
+    for(var i = 0; i < data.length; i++){ 
+        var newrow= ` <div class="col-sm-3" >
+                      <div class="inside shadow">
+                      <img class="rounded-circle z-depth-2" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
+                   data-holder-rendered="true">
+                        <p class="bName">Bicycle Name: ${data[i].name}</p>
+                        <p>Bicycle Type: ${data[i].studio}</p>
+                        <p>Bicycle Cost: ${data[i].releaseDate}</p>
+                        <p>Bicycle Description: ${data[i].releaseDate}</p>
+                       </div>
+                       </div> 
+        `;
+        row.innerHTML+=newrow;
+    }
+}
