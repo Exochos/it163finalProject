@@ -55,11 +55,11 @@ function buildTable(data){
     var table=document.getElementById('myTable'); 
     for(var i = 0; i < data.length; i ++){ 
         var row= `<tr>
-                        <td><img src='../images/${data[i].img}' alt='${data[i].name}' width="400px"></td>
-                        <td>${data[i].name}</td>
-                        <td>${data[i].price}</td>
-                        <td>${data[i].inventory}</td>
-                        <td>${data[i].desc}</td>
+                        <td><img src='../images/${data[i].img}' alt='${data[i].name}' width="300px"></td>
+                        <td><b>Name: </b>${data[i].name}</td>
+                        <td><b>Price: </b>${data[i].price}</td>
+                        <td><b>Inventory: </b>${data[i].inventory}</td>
+                        <td><b>About: </b>${data[i].desc}</td>
                   </tr>
                     `;
         table.innerHTML += row;
