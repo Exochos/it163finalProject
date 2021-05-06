@@ -33,6 +33,18 @@ function pad(val) {
 }
 
 
+function myFunction() {
+    
+    var x = document.getElementById("myTopnav");
+    
+    if (x.className === "topnav") {
+      x.className += " responsive";
+      
+    } else {
+      x.className = "topnav";
+    }
+  } 
+
 
 var products = [
     {name:'Avengers: Age of Something', studio:'disney/marvel', price:125.35 },
