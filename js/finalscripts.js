@@ -109,8 +109,8 @@ function buildrows(data){
         
         var newrow= ` <div class="col-sm-3" >
                       <div class="inside shadow">
-                      <img class="rounded-circle z-depth-2" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
-                   data-holder-rendered="true">
+                      <img class="rounded-circle z-depth-2" alt="100x100" src="./images/$(data[i].img}"
+                           data-holder-rendered="true">
                         <p class="bName">Bicycle Name: ${data[i].name}</p>
                         <p>Bicycle Type: ${data[i].studio}</p>
                         
