@@ -1,11 +1,10 @@
 ////////////////////////
-// Light Mode         //
+// Light Mode         //   
 function liteMode() {
-    console.log('got here');
-    $("#style1").attr("href", "./css/style1.css");
-    let a = $("#style1").attr("href");
-    console.log(a + "This");
-}
+    $("#styler").toggleClass("href", "./css/style2.css");
+
+    document.styleSheets[0].href = "css/style2.css";
+  }
 
 //for random number alert between 1-10
 var randomNumber = Math.floor(Math.random() * 11); 
