@@ -1,9 +1,17 @@
+////////////////////////
+// Light Mode         //
+function liteMode() {
+    console.log('got here');
+    $("#style1").attr("href", "./css/style1.css");
+    let a = $("#style1").attr("href");
+    console.log(a + "This");
+}
 
 //for random number alert between 1-10
 var randomNumber = Math.floor(Math.random() * 11); 
 
 //displays winner box if randomNumber === 10 
-if(randomNumber === 10){ 
+if (randomNumber === 10) { 
     var modal = document.getElementById("pop_up");
     var span = document.getElementsByClassName("close")[0]; 
      modal.style.display="block"; 
@@ -49,49 +57,49 @@ function myFunction() {
 var products = [
     {
         name:'Electric Bike Mk1',
-        price:'$2000',
+        price:'2000',
         inventory: '26',
         img:'bike01.png',
         desc: 'todo',
     },
     {
         name:'Electric Bike Mk2',
-        price:'$3000',
+        price:'3000',
         inventory: '26',
         img:'bike02.jpg',
         desc: 'todo',
     },
     {
         name:'Electric Bike Mk3',
-        price:'$1500',
+        price:'1500',
         inventory: '26',
         img:'bike03.jpg',
         desc: 'todo',
     },
     {
         name:'Electric Bike Mk4',
-        price:'$1200',
+        price:'1200',
         inventory: '26',
         img:'bike04.jpg',
         desc: 'todo',
     },
     {
         name:'Electric Bike Mk5',
-        price:'$15000',
+        price:'15000',
         inventory: '26',
         img:'bike05.jpg',
         desc: 'todo',
     },
     {
         name:'Electric Bike Mk6',
-        price:'$3000',
+        price:'3000',
         inventory: '26',
         img:'bike06.jpg',
         desc: 'todo',
     },
     {
         name:'Electric Bike Mk7',
-        price:'$1500',
+        price:'1500',
         inventory: '26',
         img:'bike07.jpg',
         desc: 'todo',
@@ -113,8 +121,8 @@ function buildrows(data){
                            data-holder-rendered="true">
                         <p class="bName"><b>Bicycle Name: </b>${data[i].name}</p>
                         <p><b>Bicycle Inventory: </b>${data[i].inventory}</p>
-                        <p>Bicycle Description: ${data[i].desc} </p>
-                        <p id="cost"><b>Price: </b>${data[i].price}</p>
+                        <p><b>Bicycle Description: </b>${data[i].desc} </p>
+                        <p id="cost"><b>Price: $</b>${data[i].price}</p>
                         <button style="margin:5px;padding:8px;" onClick="addToCart('${data[i].name}',${data[i].price})"> Add to Cart </button>
                        </div>
                        </div> 
