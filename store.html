@@ -42,11 +42,8 @@
 
 
     <div class="row items-rows">
-      <div class="col-sm-3" >
-            <div class="inside shadow" id=""> 
-
-            
-            </div>
+      <div id='1' class="col-sm-3">
+            <div class="inside shadow" id=""></div>
       </div>
     </div>  <!--end container -->
   </div>  <!-- End wrapper -->
@@ -61,7 +58,8 @@
     <script>
       
       function liteMode() {
-        $("#styler").attr("href", "./css/style2.css");
+        //$("#styler").attr("href", "./css/style2.css");
+        document.styleSheets[0].href = "./css/style2.css";
       }
       
     </script>
