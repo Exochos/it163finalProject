@@ -109,13 +109,13 @@ function buildrows(data){
         
         var newrow= ` <div class="col-sm-3" >
                       <div class="inside shadow">
-                      <img class="rounded-circle z-depth-2" alt="100x100" src="./images/' + $(data[i].img} '"
+                      <img class="rounded-circle z-depth-2" alt="100x100" src="./images/${data[i].img}"
                            data-holder-rendered="true">
-                        <p class="bName">Bicycle Name: ${data[i].name}</p>
-                        <p>Bicycle Type: ${data[i].studio}</p>
-                        
-                        <p>Bicycle Description: <p id="cost">${data[i].price}</p>
-                        <button onClick="addToCart('${data[i].name}',${data[i].price})">Add to Cart</button>
+                        <p class="bName"><b>Bicycle Name: </b>${data[i].name}</p>
+                        <p><b>Bicycle Inventory: </b>${data[i].inventory}</p>
+                        <p>Bicycle Description: ${data[i].desc} </p>
+                        <p id="cost"><b>Price: </b>${data[i].price}</p>
+                        <button style="margin:5px;padding:8px;" onClick="addToCart('${data[i].name}',${data[i].price})"> Add to Cart </button>
                        </div>
                        </div> 
         `;
