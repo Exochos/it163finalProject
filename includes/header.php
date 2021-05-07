@@ -20,3 +20,10 @@
     <title>Home</title>
 </head>
 <body> 
+     <?php
+            if (isset($_SESSION['username'])) {
+              echo '<li><p class="text-right text-primary">Welcome ';
+              echo $_SESSION['username'];
+              echo "</p></li>";
+            }
+          ?>
