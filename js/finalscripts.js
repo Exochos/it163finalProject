@@ -47,15 +47,55 @@ function myFunction() {
 
 
 var products = [
-    {name:'Avengers: Age of Something', studio:'disney/marvel', price:125.35 },
-    {name:'Chicken Run', studio:'dreamworks', price:6549.53 },
-    {name:' is the End', studio:"don't remember", price:10.99},
-    {name:'the End', studio:"don't remember", price:12.99},
-    {name:' End', studio:"don't remember", price:250.10 },
-    {name:'This ', studio:"don't remember", price:100.50 },
-    {name:' is the', studio:"don't remember", price:200.00 },
-   
-
+    {
+        name:'Electric Bike Mk1',
+        price:'$2000',
+        inventory: '26',
+        img:'bike01.png',
+        desc: 'todo',
+    },
+    {
+        name:'Electric Bike Mk2',
+        price:'$3000',
+        inventory: '26',
+        img:'bike02.jpg',
+        desc: 'todo',
+    },
+    {
+        name:'Electric Bike Mk3',
+        price:'$1500',
+        inventory: '26',
+        img:'bike03.jpg',
+        desc: 'todo',
+    },
+    {
+        name:'Electric Bike Mk4',
+        price:'$1200',
+        inventory: '26',
+        img:'bike04.jpg',
+        desc: 'todo',
+    },
+    {
+        name:'Electric Bike Mk5',
+        price:'$15000',
+        inventory: '26',
+        img:'bike05.jpg',
+        desc: 'todo',
+    },
+    {
+        name:'Electric Bike Mk6',
+        price:'$3000',
+        inventory: '26',
+        img:'bike06.jpg',
+        desc: 'todo',
+    },
+    {
+        name:'Electric Bike Mk7',
+        price:'$1500',
+        inventory: '26',
+        img:'bike07.jpg',
+        desc: 'todo',
+    },
 ]; 
 
 //start of store items 
