@@ -1,6 +1,5 @@
-////////////////////////
+///////////////////////
 //Store ready function for when state is loading 
-
 if(document.readystate=='loading'){ 
     document.addEventListener('DOMContentLoaded', ready()); 
 }else{ 
@@ -19,8 +18,9 @@ function liteMode() {
 var randomNumber = Math.floor(Math.random() * 11); 
 
 //displays winner box if randomNumber === 10 
+var modal = document.getElementById("pop_up");
 if (randomNumber === 10) { 
-    var modal = document.getElementById("pop_up");
+     modal = document.getElementById("pop_up");
     var span = document.getElementsByClassName("close")[0]; 
      modal.style.display="block"; 
 } 
@@ -37,7 +37,25 @@ function setTime(){
     ++totalSeconds; 
     seconds.innerHTML=pad(totalSeconds % 60); 
     minutes.innerHTML=pad(parseInt(totalSeconds/60)); 
+    if(minutes.innerHTML == 1){ 
+       
+        //form shows 
+
+    }
+} 
+
+//form data taken 
+function getPeopleInfo(name){ 
+    var name = document.getElementById("first_name").value; 
+    console.log(name);
+    // <h2 class="section-header">CART</h2>
+    var cartTitle = document.getElementById('cart_header');
+    var cartTotal = document.getElementById('cart_total'); 
+    cartTitle.innerText = name +"'s Cart";
+    cartTotal.innerText = name +"'s Total";
+    //cartTitle.innerText = name; 
 }
+
 
 function pad(val) { 
     var valString = val + ""; 
@@ -47,6 +65,11 @@ function pad(val) {
         return valString; 
     }
 }
+
+//set interview questions
+var mins = document.getElementById('mins'); 
+console.log('hello world'); 
+
 
 
 function myFunction() {
@@ -182,7 +205,6 @@ function addToCartClicked(image,name, price) {
    var image=image;
    var name = name; 
    var price = price; 
-   
    //console.log(image,name, price);
    addItemToCart(image, name, price); 
    updateCartTotal(); 
