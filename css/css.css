@@ -262,5 +262,16 @@ font-size: 1.1em;
 .btn-purchase {
 display: block;
 margin: 40px auto 80px auto;
-font-size: 1.75em;
+font-size: 1.75em; 
+float:right;
+} 
+
+#form_container{ 
+  display:block; 
+  position: fixed; 
+  width: 940px; 
+  height: 500px; 
+  background: black; 
+  top:25%; 
+  right: 25%; 
 }
