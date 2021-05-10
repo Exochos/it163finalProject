@@ -6,13 +6,24 @@ if(document.readystate=='loading'){
     ready();
 }
 
-
-// Light Mode         //   
+//////////////////////////////////////////
+// Light Mode                           //   
 function liteMode() {
-    $("#styler").toggleClass("href", "./css/style2.css");
-
-    document.styleSheets[0].href = "css/style2.css";
+    $("#styler").css("href", "./css/style2.css");
   }
+//////////////////////////////////////////
+// Dark Mode                            //   
+function darkMode() {
+}
+//////////////////////////////////////////
+// Set Cookies                          //
+function addCookie() {
+    localStorage.setItem('a', "foo");
+    console.log(localStorage.getItem('a'));
+    console.log('hello world1'); 
+}
+
+
 
 //for random number alert between 1-10
 var randomNumber = Math.floor(Math.random() * 11); 
@@ -173,9 +184,8 @@ function buildrows(data){
                         <button class="btn btn-primary shop-item-button" onclick="addToCartClicked('${data[i].image}','${data[i].name}', ${data[i].price} )">Add to Cart</button>                       </div>
                        </div> 
         `;
-        row.innerHTML+=newrow;
+        row.innerHTML += newrow;
         } 
-       
     }
 
 //start of ready() for cart functionality 
@@ -195,7 +205,6 @@ function ready(){
    }
    //add to cart buttons 
   
-
 }
 
 //removes cart item 
@@ -235,7 +244,7 @@ function addItemToCart(image, name, price){
    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
    for (var i = 0; i < cartItemNames.length; i++) {
        if (cartItemNames[i].innerText == name) {
-           alert('This item is already added to the cart')
+           alert('This item is already added to the cart');
            return
        }
    }
