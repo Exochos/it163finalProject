@@ -4,7 +4,14 @@
     box-sizing: border-box; 
 }
 
+
 /* responsive drop down nav */
+nav { 
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  margin-bottom: 25px; 
+}
 .topnav {
     overflow: hidden;
     background-color: black;
@@ -57,9 +64,6 @@
     }
   }
 
-body{ 
-    background: grey;
-} 
 
 .modal { 
     display: none; 
@@ -105,6 +109,14 @@ body{
 
 
 /* store boxes */ 
+#store_greeting{ 
+  margin-top: 150px; 
+  margin-left: 15%; 
+}
+
+#row{ 
+  margin-top: 10px;
+}
 .col-sm-3{ 
   padding: 10px; 
 }
@@ -267,11 +279,25 @@ float:right;
 } 
 
 #form_container{ 
-  display:block; 
+  display:none; 
   position: fixed; 
-  width: 940px; 
+  border-radius: 6px; 
+  border: solid 1px black; 
+  width: 350px; 
+  padding: 10px;  
   height: 500px; 
-  background: black; 
+  background: white;  
   top:25%; 
   right: 25%; 
+  
+} 
+
+.form-group{ 
+  width: 100%; 
+  padding:10px; 
+} 
+
+.form-group input{ 
+  width: 100%; 
+  margin-bottom: 5px; 
 }
