@@ -37,24 +37,40 @@ function setTime(){
     ++totalSeconds; 
     seconds.innerHTML=pad(totalSeconds % 60); 
     minutes.innerHTML=pad(parseInt(totalSeconds/60)); 
-    if(minutes.innerHTML == 1){ 
-       
-        //form shows 
-
+    console.log(minutes.innerHTML);
+    if(minutes.innerHTML == 5 && seconds.innerHTML == 00 ){ 
+    
+        var formContainer = document.getElementById('form_container');
+        formContainer.style.display = 'block'; 
+        
     }
 } 
 
+
+
 //form data taken 
-function getPeopleInfo(name){ 
-    var name = document.getElementById("first_name").value; 
-    console.log(name);
+function getPeopleInfo(){ 
+    var first = document.getElementById("first_name").value; 
+    var last = document.getElementById("last_name").value; 
+    
+    console.log(first);
+    console.log(last);
     // <h2 class="section-header">CART</h2>
     var cartTitle = document.getElementById('cart_header');
     var cartTotal = document.getElementById('cart_total'); 
-    cartTitle.innerText = name +"'s Cart";
-    cartTotal.innerText = name +"'s Total";
+    var storeGreeting = document.getElementById('store_greeting'); 
+    cartTitle.innerText = first +"'s Cart";
+    cartTotal.innerText = first +"'s Total";
+    storeGreeting.innerText = "Welcome " + first + " " + last + " To Our Store!"; 
+
+    var formContainer = document.getElementById('form_container');
+    formContainer.style.display = 'none'; 
     //cartTitle.innerText = name; 
-}
+    
+} 
+
+//for when mins == 5; 
+
 
 
 function pad(val) { 
