@@ -34,6 +34,7 @@ if (randomNumber === 10) {
      modal = document.getElementById("pop_up");
     var span = document.getElementsByClassName("close")[0]; 
      modal.style.display="block"; 
+     //MODAL NEEDS TO BE SET
 } 
 
 //set DOM elements to variables
@@ -80,10 +81,8 @@ function getPeopleInfo(){
     
 } 
 
-//for when mins == 5; 
 
-
-
+//show time
 function pad(val) { 
     var valString = val + ""; 
     if(valString.length<2){ 
