@@ -9,10 +9,10 @@ if(document.readystate=='loading'){
 //////////////////////////////////////////
 // Light Mode                           //   
 function liteMode() {
-    let a = $('#styler').css('href');
+    let a = $('#styler').attr('href');
     console.log(a);
-    $('#styler').css('href', "css/style2.css");
-    console.log($('styler').css('href'));
+    $('#styler').attr('href', "/css/style1.css");
+    console.log($('#styler').attr('href'));
   }
 //////////////////////////////////////////
 // Dark Mode                            //   
