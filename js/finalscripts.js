@@ -11,7 +11,7 @@ if(document.readystate=='loading'){
 function liteMode() {
     let a = $('#styler').attr('href');
     console.log(a);
-    $('#styler').attr('href', "/css/style1.css");
+    $('#styler').attr('href', "./css/style1.css").attr('type', 'text/css');
     console.log($('#styler').attr('href'));
   }
 //////////////////////////////////////////
