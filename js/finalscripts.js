@@ -168,8 +168,11 @@ var products = [
 ]; 
 
 //start of store items 
+if (document.getElementById('items-rows')) {
 var row=document.getElementById('items-rows'); 
 buildrows(products); 
+}
+
 function buildrows(data){ 
     var row=document.getElementById('row'); 
     
