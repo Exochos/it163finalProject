@@ -1,0 +1,22 @@
+*{ 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+html,body { 
+	height: 100%; 
+    background-color: black;
+}
+.global-container{
+	height:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+}
+form{
+	padding-top: 10px;
+	font-size: 14px;
+	margin-top: 30px;
+    background-color: blue;
+}

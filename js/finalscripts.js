@@ -9,7 +9,10 @@ if(document.readystate=='loading'){
 //////////////////////////////////////////
 // Light Mode                           //   
 function liteMode() {
-    $("#styler").css("href", "./css/style2.css");
+    let a = $('#styler').attr('href');
+    console.log(a);
+    $('#styler').attr('href', "./css/style1.css").attr('type', 'text/css');
+    console.log($('#styler').attr('href'));
   }
 //////////////////////////////////////////
 // Dark Mode                            //   
@@ -164,8 +167,11 @@ var products = [
 ]; 
 
 //start of store items 
+if (document.getElementById('items-rows')) {
 var row=document.getElementById('items-rows'); 
 buildrows(products); 
+}
+
 function buildrows(data){ 
     var row=document.getElementById('row'); 
     
