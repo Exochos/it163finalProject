@@ -13,23 +13,33 @@
     <title>Store</title>
   </head>
   <body class="store">
-    <!-- sart of nav -->
-    <nav>
-      <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="store.html">Products</a>
-        <a href="about.html">Contact</a>
-        <a href="" onclick="darkMode()"> Dark Mode </a>
-        <a id='lite' href="" onclick="liteMode()"> Light Mode </a>
-     
-        
+    
+  <!-- start of nav -->
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <div class="d-flex bd-highlight">
+        <div class="p-2 flex-grow-1 bd-highlight">
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
+          <a href="index.html" class="active">Home</a>
+          <a href="store.html">Store</a>
+          <a href="about.html">About</a>
         </div>
-        <p>Clock Counter</p> 
-      <p id="mins">00</p>:<p id="seconds">00</p>
-      </nav>
+        <div class="p-2 flex-grow-1 bd-highlight"></div>
+        <div class="p-2 bd-highlight"></div>
+        <div class="p-2 bd-highlight">
+          <button id='lite' class="btn btn-light"> Light Mode </button>
+          <button id='dark' class="btn btn-dark"> Dark Mode </button>
+        </div>
+      </div>  
+      </div>
+      <p>Clock Counter</p> 
+    <p id="mins">00</p>:<p id="seconds">00</p>
+    </nav>
+    <!-- end nav -->
+
+
       <!-- Login Form-->
       <div class="global-container">
         <div class="card login-form">

@@ -1,27 +1,21 @@
-///////////////////////
-//Store ready function for when state is loading 
-if(document.readystate=='loading'){ 
-    document.addEventListener('DOMContentLoaded', ready()); 
-}else{ 
-    ready();
-}
+/*       __                                  __     
+  ____/ /___  _____   ________  ____ _____/ /_  __
+ / __  / __ \/ ___/  / ___/ _ \/ __ `/ __  / / / /
+/ /_/ / /_/ / /__   / /  /  __/ /_/ / /_/ / /_/ / 
+\__,_/\____/\___/  /_/   \___/\__,_/\__,_/\__, /  
+                                         /____/   */
+$(document).ready(function() {
+    // Click handler for light mode & dark mode
+    $('#lite').click(function() {
+        $('#styler').attr('href', './css/style1.css');
+    });
+    $('#dark').click(function() {
+        $('#styler').attr('href', './css/css.css');
+    });
+});
 
-//////////////////////////////////////////
-// Light Mode                           //   
-function liteMode() {
-    $("#styler").css("href", "./css/style2.css");
-  }
-//////////////////////////////////////////
-// Dark Mode                            //   
-function darkMode() {
-}
-//////////////////////////////////////////
-// Set Cookies                          //
-function addCookie() {
-    localStorage.setItem('a', "foo");
-    console.log(localStorage.getItem('a'));
-    console.log('hello world1'); 
-}
+
+
 
 
 
