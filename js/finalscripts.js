@@ -202,7 +202,6 @@ function ready(){
        var input = quantityInputs[i]; 
        input.addEventListener('change',quantityChanged);
    }
-   //add to cart buttons 
   
 }
 
