@@ -36,8 +36,15 @@ form{
 	font-size: 13px;
 	margin-top:20px;
 }
-
-
+#lite:hover {
+  background-color: #CC4C4C;
+	transition-property: box-shadow;
+}
+#dark:hover {
+  background-color:#fff;
+  color: #000; 
+	transition-property: box-shadow;
+}
 /* responsive drop down nav */
 nav { 
   position: fixed; 
