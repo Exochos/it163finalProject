@@ -12,10 +12,44 @@ $(document).ready(function() {
     $('#dark').click(function() {
         $('#styler').attr('href', './css/style1.css');
     });
+    // Click Handler for login
+    $('#login').click(() => {
+        validate();
+    });
 });
 
 
 
+function validate() {
+   var username = document.getElementById("username").value;
+   var password = document.getElementById("password").value;
+   let success = 0;
+   const loginlist = [
+        { 
+          username: 'admin',
+          password: 'password',
+        },
+        { 
+          username: 'root',
+          password: 'password',
+        },
+        { 
+          username: 'jeremy',
+          password: '123456',
+        },];
+        Object.keys(loginlist).forEach(key => {
+            if ((username == loginlist[key].username) && (password == loginlist[key].password)) {
+                console.log('Success');
+                $('#loginForm').css('display', 'none');
+                $('#home').toggle();
+                success = 1;
+            }
+          });
+        if (success == 0) {
+            alert('Username Or Password is incorrect');
+        }
+
+}
 
 
 
@@ -158,8 +192,11 @@ var products = [
 ]; 
 
 //start of store items 
-var row=document.getElementById('items-rows'); 
-buildrows(products); 
+if (document.getElementById('items-rows')) {
+    var row=document.getElementById('items-rows'); 
+    buildrows(products); 
+}
+
 function buildrows(data){ 
     var row=document.getElementById('row'); 
     

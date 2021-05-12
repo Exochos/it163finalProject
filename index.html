@@ -13,7 +13,7 @@
     <title>Store</title>
   </head>
   <body class="store">
-
+  <div class="global-container">
   <!-- start of nav -->
   <nav>
     <div class="topnav" id="myTopnav">
@@ -40,32 +40,38 @@
 
 
       <!-- Login Form-->
-      <div class="global-container">
-        <div class="card login-form">
+      
+        <div id='loginForm' class="card login-form">
         <div class="card-body">
           <h3 class="card-title text-center">Log in to Electronic Bikes</h3>
           <div class="card-text">
             <form>
               <div class="form-group">
-                  <label for="inputEmail">Email address</label>
-                  <input type="email" class="form-control form-control-sm" id="inputEmail" aria-describedby="emailHelp">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control form-control-sm" id="username" aria-describedby="userName">
               </div>
               <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <a href="#" style="float:right;font-size:12px;">Forgot password?</a>
-                  <input type="password" class="form-control form-control-sm" id="exampleInputPassword">
+                  <label for="password"> Password </label>
+                  <a href="#" style="float:right;font-size:12px;"> Forgot password? </a>
+                  <input type="password" class="form-control form-control-sm" id="password">
               </div>
-              <button type="submit" class="btn btn-primary btn-block" onclick="addCookie">Sign in</button>
-              <div class="sign-up">Don't have an account? <a href="#">Create One</a>
               </div>
             </form>
+            <button id='login' class="btn btn-primary btn-block">Sign in</button>
+            <div class="sign-up">Don't have an account? <a href="#">Create One</a>
           </div>
         </div>
       </div>
-      </div>
+
       <!-- End Login Form -->
              
-
+  <!-- Login Form-->
+      
+  <div id='home' class="card login-form" style='display:none;'>
+   <h2>Got here!</h2>
+  </div>
+  <!-- End Login Form -->
+</div>
         </div>
       </div>
       
