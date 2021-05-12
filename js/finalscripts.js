@@ -18,7 +18,6 @@ $(document).ready(function() {
     });
 });
 
-
   $(document).ready(function() {
      // Click handler for light mode & dark mode
      $('#lite').click(function() {
@@ -87,7 +86,7 @@ function setTime(){
     seconds.innerHTML=pad(totalSeconds % 60); 
     minutes.innerHTML=pad(parseInt(totalSeconds/60)); 
     console.log(minutes.innerHTML);
-    if(minutes.innerHTML == 5 && seconds.innerHTML == 00 ){ 
+    if(minutes.innerHTML == 0 && seconds.innerHTML == 10 ){ 
     
         var formContainer = document.getElementById('form_container');
         formContainer.style.display = 'block'; 
@@ -323,4 +322,3 @@ function updateCartTotal() {
    total = Math.round(total * 100) / 100
    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total.toFixed(2);
 } 
-
