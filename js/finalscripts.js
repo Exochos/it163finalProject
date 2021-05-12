@@ -19,6 +19,15 @@ $(document).ready(function() {
 });
 
 
+  $(document).ready(function() {
+     // Click handler for light mode & dark mode
+     $('#lite').click(function() {
+         $('#styler').attr('href', './css/style2.css');
+     });
+     $('#dark').click(function() {
+         $('#styler').attr('href', './css/style1.css');
+     });
+ });
 
 function validate() {
    var username = document.getElementById("username").value;
