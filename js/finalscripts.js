@@ -6,14 +6,14 @@
                                          /____/   */
 $(document).ready(function() {
     // Click handler for light mode & dark mode
-    $('#lite').click( () => {
+    $('#lite').click(function() {
         $('#styler').attr('href', './css/style2.css');
     });
-    $('#dark').click( () => {
+    $('#dark').click(function() {
         $('#styler').attr('href', './css/style1.css');
     });
     // Click Handler for login
-    $('#login').click( () => {
+    $('#login').click(function() {
         validate();
     });
 });
@@ -36,6 +36,7 @@ function validate() {
           username: 'jeremy',
           password: '123456',
         },];
+
         Object.keys(loginlist).forEach(key => {
             if ((username == loginlist[key].username) && (password == loginlist[key].password)) {
                 console.log('Success');
