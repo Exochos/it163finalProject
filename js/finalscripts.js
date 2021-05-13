@@ -4,7 +4,7 @@
 / /_/ / /_/ / /__   / /  /  __/ /_/ / /_/ / /_/ / 
 \__,_/\____/\___/  /_/   \___/\__,_/\__,_/\__, /  
                                          /____/   */
-$(document).ready(function () {
+$(document).ready(function() {
     // Click handler for light mode & dark mode
     $('#lite').click( () => {
         $('#styler').attr('href', './css/style2.css');
@@ -13,7 +13,7 @@ $(document).ready(function () {
         $('#styler').attr('href', './css/style1.css');
     });
     // Click Handler for login
-    $('#login').click(() => {
+    $('#login').click( () => {
         validate();
     });
 });
