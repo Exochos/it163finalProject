@@ -189,6 +189,20 @@ var products = [
         img:'bike07.jpg',
         desc: '30 pounds, 20-30 Mile Range, 2 Hour Recharge',
     },
+    {
+        name:'Electric Bike Mk8',
+        price:'2500',
+        inventory: '10',
+        img:'bike08.jpg',
+        desc: '28 pounds, 40-50 Mile Range, 2.5 Hour Recharge',
+    },
+    {
+        name:'Electric Bike Mk9',
+        price:'3500',
+        inventory: '5',
+        img:'bike07.jpg',
+        desc: '40 pounds, 50-60 Mile Range, 3 Hour Recharge',
+    },
 ]; 
 
 //start of store items 
