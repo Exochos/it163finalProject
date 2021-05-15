@@ -200,7 +200,7 @@ var products = [
         name:'Electric Bike Mk9',
         price:'3500',
         inventory: '5',
-        img:'bike07.jpg',
+        img:'bike09.jpg',
         desc: '40 pounds, 50-60 Mile Range, 3 Hour Recharge',
     },
 ]; 
