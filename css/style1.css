@@ -166,7 +166,7 @@ nav {
 
   
 .rounded-img{ 
-  width: 150px; 
+  width: 80%; 
   margin: 0 auto; 
   display: block;
   margin-bottom: 10px; 
@@ -178,6 +178,8 @@ nav {
       float: right;
       display: block;
     }
+
+    
 
   }
 
@@ -191,7 +193,7 @@ nav {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
-      right: 0;
+      right: 50%;
       top: 0;
     }
     
@@ -269,7 +271,6 @@ nav {
   max-width: 100%; 
   min-width: 150px;
   background: white;
-  height: 450px;
   border-radius: 6px; 
   border: 1px solid grey;  
   display: block;
@@ -363,6 +364,7 @@ background-color: #EB5757;
 border: none;
 border-radius: .3em;
 font-weight: bold;
+margin-left: 33px;
 }
 
 .btn-danger:hover {
@@ -393,7 +395,7 @@ border: none;
 .cart-total {
 text-align: end;
 margin-top: 10px;
-margin-right: 10px;
+margin-right: 10%;
 }
 
 .cart-total-title {
@@ -410,7 +412,7 @@ font-size: 1.1em;
 
 .btn-purchase {
 display: block;
-margin: 40px auto 80px auto;
+margin: 40px auto 80px 30px;
 font-size: 1.75em; 
 float:right;
 } 
@@ -440,6 +442,18 @@ float:right;
 }
 
 
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .btn-purchase{ 
+    margin-right: 0px; 
+  }
+
+}
 
 
 
