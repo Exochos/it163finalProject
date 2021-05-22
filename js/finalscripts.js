@@ -259,6 +259,7 @@ function ready(){
        //event listener
        buttons.addEventListener('click', removeCartItem)
    }
+
    //set quantitites. can't have zero
    var quantityInputs = document.getElementsByClassName('cart-quantity-input'); 
    for(var i = 0; i < quantityInputs.length; i++){ 
@@ -327,7 +328,6 @@ function addItemToCart(image, name, price){
    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem); 
    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged); 
 }
-
 
 
 //update cart total
