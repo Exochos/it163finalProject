@@ -225,9 +225,9 @@ nav {
 
 
 /* store boxes */ 
-#store_greeting{ 
+#store_greeting{
+  text-align: center;
   margin-top: 150px; 
-  margin-left: 15%; 
 }
 
 #row{ 
@@ -242,19 +242,18 @@ nav {
   max-width: 100%; 
   min-width: 150px;
   background: white;
-  height: 450px;
   border-radius: 6px; 
   border: 1px solid grey;  
   display: block;
   text-align: center;
-  padding: 10px; 
+  padding: 15px; 
 } 
 
 .rounded-circle{ 
   width: 150px; 
+  height: 100px;
   margin: 0 auto; 
   display: block;
-  
   margin-bottom: 10px; 
 }
 
@@ -416,4 +415,17 @@ float:right;
 .form-group input{ 
   width: 100%; 
   margin-bottom: 5px; 
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .btn-purchase{ 
+    margin-right: 0px; 
+  }
+
 }
