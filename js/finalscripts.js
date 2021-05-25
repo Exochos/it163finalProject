@@ -11,14 +11,14 @@ $(document).ready(function() {
 
     // Click handler for light mode & dark mode
     $('#lite').click(function() {
-        $('#styler').attr('href', './css/style2.css');
-        localStorage.style = './css/style2.css';
+        $('#styler').attr('href', './css/style1.css');
+        localStorage.style = './css/style1.css';
     });
 
     // Click handler for dark mode 
     $('#dark').click(function() {
-        $('#styler').attr('href', './css/style1.css');
-        localStorage.style = './css/style1.css';
+        $('#styler').attr('href', './css/style2.css');
+        localStorage.style = './css/style2.css';
     });
 
     // Click Handler for login
