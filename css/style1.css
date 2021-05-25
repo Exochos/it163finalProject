@@ -255,13 +255,15 @@ nav {
 
 /* store boxes */ 
 #store_greeting{ 
+  text-align: 15%; 
   margin-top: 150px; 
-  margin-left: 15%; 
+
 }
 
 #row{ 
   margin-top: 10px;
 }
+
 .col-sm-3{ 
   padding: 10px; 
 }
@@ -275,10 +277,16 @@ nav {
   border: 1px solid grey;  
   display: block;
   text-align: center;
-  padding: 10px; 
+  padding: 15px; 
 } 
 
-
+.rounded-circle{ 
+  width: 125px; 
+  height: 100px;
+  margin: 0 auto; 
+  display: block;
+  margin-bottom: 10px; 
+}
 
 .bName{ 
   border-top: solid 2px grey; 
@@ -354,7 +362,7 @@ font-size: 1.2em;
 
 .cart-item-image {
 width: 75px;
-height: auto;
+height: 75px;
 border-radius: 10px;
 }
 
