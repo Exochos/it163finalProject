@@ -250,7 +250,7 @@ nav {
 } 
 
 .rounded-circle{ 
-  width: 150px; 
+  width: 125px; 
   height: 100px;
   margin: 0 auto; 
   display: block;
@@ -331,7 +331,7 @@ font-size: 1.2em;
 
 .cart-item-image {
 width: 75px;
-height: auto;
+height: 75px;
 border-radius: 10px;
 }
 
