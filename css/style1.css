@@ -120,6 +120,7 @@ font-size: 13px;
 margin-top:20px;
 }
 #lite:hover {
+<<<<<<< Updated upstream
 background-color: #CC4C4C;
 transition-property: box-shadow;
 }
@@ -127,6 +128,15 @@ transition-property: box-shadow;
 background-color:#fff;
 color: #000; 
 transition-property: box-shadow;
+=======
+  background-color: #BBC5AA;
+	transition-property: box-shadow;
+}
+#dark:hover {
+  background-color:#BBC5AA;
+  color: #000; 
+	transition-property: box-shadow;
+>>>>>>> Stashed changes
 }
 /* responsive drop down nav */
 nav { 
