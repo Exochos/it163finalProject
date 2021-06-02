@@ -97,7 +97,7 @@
       seconds.innerHTML=pad(totalSeconds % 60); 
       minutes.innerHTML=pad(parseInt(totalSeconds/60)); 
       console.log(minutes.innerHTML);
-      if(minutes.innerHTML == 5 && seconds.innerHTML == 00 ){ 
+      if(minutes.innerHTML == 00 && seconds.innerHTML == 05 ){ 
       
           var formContainer = document.getElementById('form_container');
           formContainer.style.display = 'block'; 
