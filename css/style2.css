@@ -8,6 +8,9 @@ html,body {
 	height: 100%;
   background-color: #000; 
 }
+.store {
+  background-color: #000;
+}
 .about {
   background-color: #000;
 }
