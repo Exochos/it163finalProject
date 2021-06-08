@@ -169,42 +169,42 @@
       {
           name:'Electric Bike Mk2',
           price:'3000',
-          inventory: '26',
+          inventory: '10',
           img:'bike02.jpg',
           desc: '35 pounds, 25-40 Mile Range, 2.5 Hour Recharge',
       },
       {
           name:'Electric Bike Mk3',
           price:'1500',
-          inventory: '26',
+          inventory: '25',
           img:'bike03.jpg',
           desc: '28 pounds, 25-35 Mile Range, 2 Hour Recharge',
       },
       {
           name:'Electric Bike Mk4',
           price:'1200',
-          inventory: '26',
+          inventory: '13',
           img:'bike04.jpg',
           desc: '26 pounds, 15-25 Mile Range, 2 Hour Recharge',
       },
       {
           name:'Electric Bike Mk5',
-          price:'15000',
-          inventory: '26',
+          price:'1800',
+          inventory: '17',
           img:'bike05.jpg',
           desc: '20 pounds, 15-20 Mile Range, 1.5 Hour Recharge',
       },
       {
           name:'Electric Bike Mk6',
           price:'3000',
-          inventory: '26',
+          inventory: '21',
           img:'bike06.jpg',
           desc: '32 pounds, 25-30 Mile Range, 2 Hour Recharge',
       },
       {
           name:'Electric Bike Mk7',
           price:'1500',
-          inventory: '26',
+          inventory: '22',
           img:'bike07.jpg',
           desc: '30 pounds, 20-30 Mile Range, 2 Hour Recharge',
       },
@@ -218,7 +218,7 @@
       {
           name:'Electric Bike Mk9',
           price:'3500',
-          inventory: '5',
+          inventory: '11',
           img:'bike09.jpg',
           desc: '40 pounds, 50-60 Mile Range, 3 Hour Recharge',
       },
@@ -234,7 +234,7 @@
       for(var i = 0; i < data.length; i++){ 
           var price= data[i].price; 
           
-          var newrow= ` <div class="col-sm-3" >
+          var newrow= ` <div class="col-sm-4" >
                         <div class="inside shadow">
                         <img class="rounded-circle rounded-img z-depth-2" alt="100x100" src="./images/${data[i].img}"
                              data-holder-rendered="true">
