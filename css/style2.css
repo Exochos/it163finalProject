@@ -5,16 +5,24 @@
     font-family: 'Raleway', sans-serif; 
 }
 html,body { 
-	height: 100%; 
+	height: 100%;
+  background-color: #000; 
+}
+.about {
+  background-color: #000;
 }
 /*----  Main Style  ----*/
 #cards_landscape_wrap-2{
   text-align: center;
-  background: #000000;
+  background-color: #000000;
+}
+#aboutcontainer {
+  background-color: #000;
 }
 #cards_landscape_wrap-2 .container{
   padding-top: 80px; 
   padding-bottom: 100px;
+  background-color: #000;
 }
 #cards_landscape_wrap-2 a{
   text-decoration: none;
