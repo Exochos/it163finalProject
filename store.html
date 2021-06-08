@@ -43,7 +43,7 @@
         <div class="p-2 bd-highlight">
           <button id="lite" class="btn btn-light"><i class="fa fa-lightbulb" style="color: rgb(0, 0, 0);font-weight: 900;"></i></button>
           <button id="dark" class="btn btn-dark"><i class="fa fa-lightbulb" style="color: rgb(255, 255, 255);font-weight: 900;"></i></button>
-          <button type="button" class="btn btn-info">Clock: <span id="mins">00</span>:<span id="seconds">00</span></button>
+          <button type="button" class="btn btn-info" style="background-color:black;color:white;border:solid 1px white;">Clock: <span id="mins">00</span>:<span id="seconds">00</span></button>
         </div>
       </div>  
       </div>
@@ -61,9 +61,9 @@
     </div>
     
     <!-- Start of cart  -->
-    <section class="container content-section">
+    <section class="container content-section" style="color: #fefefe;font-weight: bold;">
       <h2 class="section-header" id="cart_header">CART</h2>
-      <div class="cart-row">
+      <div class="cart-row" style="color: #fefefe;font-weight: bold;">
           <span class="cart-item cart-header cart-column">ITEM</span>
           <span class="cart-price cart-header cart-column">PRICE</span>
           <span class="cart-quantity cart-header cart-column">QUANTITY</span>
@@ -80,7 +80,8 @@
 
 
   <!-- start of survey form  -->
-  <div class="container-lg" id="form_container"> 
+  <div class="container-lg" id="form_container">
+    <span class="close" id="close" onclick="this.parentNode.style.display = 'none';">✖</span> 
     <h1>Survey content</h1> 
  <div class="form-group">
     <label >First Name</label>

@@ -235,14 +235,14 @@
           var price= data[i].price; 
           
           var newrow= ` <div class="col-sm-3" >
-                        <div class="inside shadow">
+                        <div class="inside shadow" id="storecards">
                         <img class="rounded-circle rounded-img z-depth-2" alt="100x100" src="./images/${data[i].img}"
                              data-holder-rendered="true">
                           <p class="bName"><b>Bicycle Name: </b>${data[i].name}</p>
                           <p><b>Bicycle Inventory: </b>${data[i].inventory}</p>
                           <p><b>Bicycle Description: </b>${data[i].desc} </p>
                           <p id="cost"><b>Price: $</b>${data[i].price}</p>
-                          <button class="btn btn-primary shop-item-button" onclick="addToCartClicked('images/${data[i].img}','${data[i].name}', ${data[i].price} )">Add to Cart</button>                       </div>
+                          <button style="background-color:black;color:white;border:solid 1px white;" class="btn btn-primary shop-item-button" onclick="addToCartClicked('images/${data[i].img}','${data[i].name}', ${data[i].price} )">Add to Cart</button>                       </div>
                          </div> 
           `;
           row.innerHTML += newrow;
