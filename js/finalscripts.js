@@ -171,7 +171,7 @@
           price:'3000',
           inventory: '10',
           img:'bike02.jpg',
-          desc: '35 pounds, 25-40 Mile Range, 2.5 Hour Recharge',
+          desc: '35 pounds, 25-40 Mile Range, 3 Hour Recharge',
       },
       {
           name:'Electric Bike Mk3',
@@ -192,7 +192,7 @@
           price:'1800',
           inventory: '17',
           img:'bike05.jpg',
-          desc: '20 pounds, 15-20 Mile Range, 1.5 Hour Recharge',
+          desc: '20 pounds, 15-20 Mile Range, 1 Hour Recharge',
       },
       {
           name:'Electric Bike Mk6',
@@ -213,7 +213,7 @@
           price:'2500',
           inventory: '10',
           img:'bike08.jpg',
-          desc: '28 pounds, 40-50 Mile Range, 2.5 Hour Recharge',
+          desc: '28 pounds, 40-50 Mile Range, 2 Hour Recharge',
       },
       {
           name:'Electric Bike Mk9',
