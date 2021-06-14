@@ -242,7 +242,7 @@
                           <p><b>Bicycle Inventory: </b>${data[i].inventory}</p>
                           <p><b>Bicycle Description: </b>${data[i].desc} </p>
                           <p id="cost"><b>Price: $</b>${data[i].price}</p>
-                          <button style="background-color:black;color:white;border:solid 1px white;" class="btn btn-primary shop-item-button" onclick="addToCartClicked('images/${data[i].img}','${data[i].name}', ${data[i].price} )">Add to Cart</button>                       </div>
+                          <button style="background-color:#000000;color:#ffffff;border:solid 1px #ffffff;" class="btn btn-primary shop-item-button" onclick="addToCartClicked('images/${data[i].img}','${data[i].name}', ${data[i].price} )">Add to Cart</button>                       </div>
                          </div> 
           `;
           row.innerHTML += newrow;
