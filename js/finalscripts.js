@@ -157,25 +157,7 @@
       }
     } 
 
-    //function to get browser widths 
-    function getWidth() {
-        if (self.innerWidth) {
-            console.log(self.innerWidth);
-            return self.innerWidth;
-          
-        }
-      
-        if (document.documentElement && document.documentElement.clientWidth) {
-            console.log(document.documentElement.clientWidth)
-          return document.documentElement.clientWidth;
-        }
-      
-        if (document.body) {
-            console.log(document.body.clientWidth);
-          return document.body.clientWidth;
-        }
-      }
-getWidth(); 
+    
   
   
   var products = [
