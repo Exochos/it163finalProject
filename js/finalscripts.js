@@ -75,14 +75,6 @@
   //for random number alert between 1-10
   var randomNumber = Math.floor(Math.random() * 11); 
   
-  //displays winner box if randomNumber === 10 
-  var mode = document.getElementById("pop_up");
-  if (randomNumber === 10) { 
-       mode = document.getElementById("pop_up");
-      var span = document.getElementsByClassName("close")[0]; 
-       mode.style.display="block"; 
-       //MODAL NEEDS TO BE SET
-  } 
   
   //set DOM elements to variables
   var minutes=document.getElementById("mins");
@@ -349,3 +341,10 @@
   } 
   
   
+  //displays winner box if randomNumber === 10 
+  var mode = document.getElementById("pop_up");
+  if (randomNumber === 10) { 
+      var span = document.getElementsByClassName("close")[0]; 
+        mode.style.display="block"; 
+       //MODAL NEEDS TO BE SET
+  } 
