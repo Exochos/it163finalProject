@@ -76,11 +76,11 @@
   var randomNumber = Math.floor(Math.random() * 11); 
   
   //displays winner box if randomNumber === 10 
-  var modal = document.getElementById("pop_up");
+  var mode = document.getElementById("pop_up");
   if (randomNumber === 10) { 
-       modal = document.getElementById("pop_up");
+       mode = document.getElementById("pop_up");
       var span = document.getElementsByClassName("close")[0]; 
-       modal.style.display="block"; 
+       mode.style.display="block"; 
        //MODAL NEEDS TO BE SET
   } 
   
