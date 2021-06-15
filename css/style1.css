@@ -188,7 +188,7 @@ margin-bottom: 10px;
 @media screen and (max-width: 700px) {
   .rounded-img{ 
     width: 100px; 
-  }
+  } 
 
 }
 @media screen and (max-width: 600px) {
@@ -470,6 +470,21 @@ margin-bottom: 5px;
 
 #btn-setting{ 
   margin-left: 50%; 
+}
+
+
+@media screen and (max-width: 970px) {
+
+  #btn-setting{ 
+    margin-left: 20%; 
+  }
+}
+
+@media screen and (max-width: 844px) {
+
+  #btn-setting{ 
+    margin-left: 20%; 
+  }
 }
 
 @media screen and (max-width: 600px) {

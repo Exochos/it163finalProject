@@ -497,8 +497,23 @@ margin-bottom: 5px;
 
 
 #btn-setting{ 
-  margin-left: 60%; 
+  margin-left: 50%; 
 }
+
+@media screen and (max-width: 970px) {
+
+  #btn-setting{ 
+    margin-left: 20%; 
+  }
+}
+
+@media screen and (max-width: 844px) {
+
+  #btn-setting{ 
+    margin-left: 20%; 
+  }
+}
+
 @media screen and (max-width: 600px) {
 .topnav a:not(:first-child) {display: none;}
 .topnav a.icon {
@@ -514,6 +529,9 @@ a{
   max-width: 100%;
 } 
 
+#btn-setting{ 
+  margin-left: 0; 
+}
 
 
 .col-sm-4{ 
