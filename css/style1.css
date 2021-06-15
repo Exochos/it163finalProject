@@ -469,10 +469,10 @@ margin-bottom: 5px;
 }
 
 #btn-setting{ 
-  margin-left: 50%; 
+  margin-left: 55%; 
 }
 
-
+/* Responsive CSS */
 @media screen and (max-width: 970px) {
 
   #btn-setting{ 
