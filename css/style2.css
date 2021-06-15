@@ -356,7 +356,6 @@ list-style-type: none;
 .store .row { 
 margin: 0 auto;
 max-width: 1250px; 
-min-width: 500px;
 } 
 
 /* cart boxes */ 
@@ -496,6 +495,10 @@ width: 100%;
 margin-bottom: 5px; 
 }
 
+
+#btn-setting{ 
+  margin-left: 60%; 
+}
 @media screen and (max-width: 600px) {
 .topnav a:not(:first-child) {display: none;}
 .topnav a.icon {
@@ -509,6 +512,12 @@ margin-bottom: 5px;
 
 a{ 
   max-width: 100%;
+} 
+
+
+
+.col-sm-4{ 
+  padding-top: 10px; 
 }
 
 }
