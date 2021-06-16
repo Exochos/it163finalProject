@@ -1,5 +1,6 @@
 # it163finalProject
-It163 Final Project
+It163 Final Project:
+Website is live at: https://www.electronicbikes.shop/
 
 Web Development Group #3: Jena Delp, Josh Bordallo, Cindy Le, Jeremy Ward 
 
