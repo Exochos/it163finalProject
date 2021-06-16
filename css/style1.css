@@ -516,4 +516,26 @@ a{
 }
 
 
+footer {
+  text-align:center;
+  text-transform:uppercase;
+  clear:both;
+}
+
+footer p {
+  padding:2em;
+}
+
+footer a {
+  color:darkslategrey;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer a:hover {
+  color:white;
+  background-color:black;
+}
+
+
 
